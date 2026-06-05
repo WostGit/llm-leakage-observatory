@@ -1,0 +1,8 @@
+[
+  {"id":"seed-carlini-2021","year":2021,"title":"Extracting Training Data from Large Language Models","venue":"USENIX Security"},
+  {"id":"seed-privacy-paradox","year":2025,"title":"The Privacy Paradox in Large Language Models","venue":"AsiaCCS / SoK seed"},
+  {"id":"seed-embedding-inversion","year":2024,"title":"Embedding Inversion and Vector Database Privacy","venue":"arXiv seed"},
+  {"id":"seed-kv-cache","year":2025,"title":"Prompt Caching and KV-Cache Timing Leakage","venue":"arXiv seed"},
+  {"id":"seed-agent-leak","year":2026,"title":"Agent Internal-Channel and Tool-Call Leakage","venue":"arXiv seed"},
+  {"id":"seed-rag-privacy","year":2025,"title":"RAG Privacy, Membership, and Knowledge-Base Extraction","venue":"arXiv seed"}
+]
