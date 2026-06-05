@@ -125,4 +125,6 @@ function Report() {
 }
 
 const root = createRoot(document.getElementById('root')!);
-root.render(window.location.pathname.includes('report') ? <Report /> : <Poster />);
+const params = new URLSearchParams(window.location.search);
+const reportMode = window.location.pathname.includes('report') || window.location.hash.includes('report') || params.has('report');
+root.render(reportMode ? <Report /> : <Poster />);
