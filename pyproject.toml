@@ -1,0 +1,16 @@
+[project]
+name = "llm-leakage-observatory"
+version = "0.1.0"
+description = "Continuous RAG-updated SoK poster and snapshot system for LLM leakage."
+requires-python = ">=3.10"
+dependencies = ["typer>=0.12", "pydantic>=2.0", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+mlx = ["mlx", "mlx-lm"]
+rag = ["duckdb", "lancedb"]
+
+[project.scripts]
+llmo = "rag.cli:app"
+
+[tool.setuptools]
+packages = ["rag", "rag.llm", "rag.tasks"]
