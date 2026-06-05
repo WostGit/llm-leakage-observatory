@@ -1,0 +1,27 @@
+{
+  "title": "LLM Leakage Observatory Paper Record",
+  "type": "object",
+  "required": ["id", "title", "authors", "year", "source", "url", "leakage_origins", "observable_signals", "attacker_classes", "leaked_assets", "evidence_badges", "limitations", "human_review_status"],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "year": {"type": "integer", "minimum": 2010},
+    "venue": {"type": "string"},
+    "source": {"type": "string"},
+    "url": {"type": "string"},
+    "doi": {"type": "string"},
+    "arxiv_id": {"type": "string"},
+    "leakage_origins": {"type": "array", "items": {"type": "string"}},
+    "observable_signals": {"type": "array", "items": {"type": "string"}},
+    "attacker_classes": {"type": "array", "items": {"type": "string"}},
+    "leaked_assets": {"type": "array", "items": {"type": "string"}},
+    "attack_objectives": {"type": "array", "items": {"type": "string"}},
+    "defense_classes": {"type": "array", "items": {"type": "string"}},
+    "evidence_badges": {"type": "array", "items": {"type": "string", "enum": ["P", "M", "R", "B", "S", "W", "L", "A", "C", "?"]}},
+    "badge_justification": {"type": "object", "additionalProperties": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "human_review_status": {"type": "string", "enum": ["machine_only", "human_checked", "human_disputed", "excluded"]},
+    "notes": {"type": "string"}
+  }
+}
