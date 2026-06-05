@@ -1,0 +1,10 @@
+llm:
+  provider: mlx
+  model: gemma4-e2b
+  temperature: 0.2
+  max_tokens: 1600
+
+snapshot:
+  immutable_pdf_exports: true
+  poster_size: A0 landscape
+  report_size: A4
